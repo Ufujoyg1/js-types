@@ -1,0 +1,114 @@
+//qp
+var data = true;
+
+if (data) {
+  console.log("boolean lover 500");
+} else {
+  console.log("boolean hater for life")
+}
+
+//q2=
+var n =null;
+console.log(n * 32)
+
+
+//q3=
+var num = 6.6;
+var ber = 6.4;
+console.log(num + ber)
+
+
+//q4=
+var a;
+console.log(a + 2);
+
+//q5=
+var firstValue,secondValue;
+var firstBool,secondBool;
+
+
+
+firstValue = window.prompt('Please enter your first value','');
+firstValue = parseFloat(firstValue);
+secondValue = window.prompt('Please enter your second value','');
+secondValue = parseFloat(secondValue);
+firstBool = (firstValue < secondValue);
+secondBool = (firstValue <= secondValue);
+document.write('It is ' + firstBool + ' that '+ firstValue + ' < '
+                + secondValue);
+document.write('<BR>' + 'It is ' + secondBool + ' that '+ firstValue
+                + ' <= ' + secondValue);
+
+//q8=
+var myNum = 0.0;
+if(myNum){
+    console.log('I am a truthy value');
+}
+else {
+    console.log('I am a falsy value');
+}
+
+//q7
+
+var string = "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.";
+console.log(string.toUpperCase());
+
+//q8
+
+
+
+var str   = "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.";
+var stringArray = str.split(/(\s+)/);
+
+console.log(stringArray);
+
+//q9
+var str = 'Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.';
+
+console.log(`${str} ${str.length}`);
+
+//q10
+var someStr = 'He said "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth."';
+console.log(someStr.replace(/[".]+/g, ''));
+//q11
+
+var str = "He said Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equalNow we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure We are met on a great battle-field of that war We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live It is altogether fitting and proper that we should do thisBut, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract The world will little note, nor long remember what we say here, but it can never forget what they did here It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth"
+
+console.log(`${str} ${str.length}`);
+
+//q12
+
+function WordCount(str) {
+  return str.split(" ").length;
+}
+
+console.log(WordCount("He said Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equalNow we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure We are met on a great battle-field of that war We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live It is altogether fitting and proper that we should do thisBut, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract The world will little note, nor long remember what we say here, but it can never forget what they did here It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth"));
+
+//q13
+ function jCounter(data) {
+     var strArr = data.split(' ');
+     var strChar = data.length;
+     var objStr = strArr.length;  
+     var strSpaces = objStr - 1;
+
+     var numArr = [];
+     for (i=0; i<objStr; i++) {
+        numArr.push(strArr[i].length);
+     }
+
+     var sum = 0;
+     for (i=0; i<numArr.length; i++) {
+        sum = sum + numArr[i];
+     }
+
+     var avg = sum/objStr;
+     var strObj = {};
+
+     strObj.words = objStr;
+     strObj.chars = strChar;
+     strObj.avgLength = avg ;
+     strObj.spaces = strSpaces;
+
+     console.log(strObj);
+   }
+jCounter("He said Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equalNow we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure We are met on a great battle-field of that war We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live It is altogether fitting and proper that we should do thisBut, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract The world will little note, nor long remember what we say here, but it can never forget what they did here It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth");
